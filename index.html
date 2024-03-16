@@ -385,6 +385,21 @@
                         </li>
                     </ul>
                 </div>
+                <div class="footer-subscribe">
+                    <p class="subscribe-header">Subscribe</p>
+                    <form class="subscribe-form">
+                        <label class="subscribe-label">
+                            <input class="subscribe-input" type="email" placeholder="E-mail" , name="email" />
+                        </label>
+                        <button class="subscribe-btn" type="submit">
+                            Subscribe
+                            <svg class="subscribe-icon">
+                                <use href="./images/icons.svg#icon-paper-plane"></use>
+                            </svg>
+                        </button>
+                    </form>
+
+                </div>
             </div>
         </footer>
         <!-- #endregion -->
@@ -399,6 +414,49 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <p class="modal-header">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <div class="modal-form-field">
+                    <label for="name" class="modal-label">Name</label>
+                    <input type="text" name="name" class="modal-input" id="name" />
+                    <svg class="modal-icon">
+                        <use href="./images/icons.svg#icon-user"></use>
+                    </svg>
+                </div>
+                <div class="modal-form-field">
+                    <label for="phone" class="modal-label">Phone</label>
+                    <input type="tel" name="phone" class="modal-input" id="phone" />
+                    <svg class="modal-icon">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+                <div class="modal-form-field">
+                    <label for="email" class="modal-label">Email</label>
+                    <input type="email" name="email" class="modal-input" id="email" />
+                    <svg class="modal-icon">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                </div>
+                <div class="modal-form-field">
+                    <label for="comment" class="modal-label">Comment</label>
+                    <textarea class="modal-comment" name="comment" id="comment" placeholder="Text input"
+                        required=""></textarea>
+                </div>
+                <div class="modal-form-checkbox">
+                    <input type="checkbox" id="policy" name="policy" value="true"
+                        class="form-checkbox-input visually-hidden" />
+                    <label for="policy" class="form-policy-label">
+                        <div class="custom-checkbox">
+                            <svg class="checkmark-icon">
+                                <use href="./images/icons.svg#icon-checkmark"></use>
+                            </svg>
+                        </div>
+                        I accept the terms and conditions of the&nbsp<a class="privacy-policy-link" href="#"
+                            target="_blank">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="modal-btn-send" type="submit">Send</button>
+            </form>
         </div>
     </div>
     <!-- #endregion -->
