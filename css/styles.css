@@ -368,6 +368,7 @@ a {
 }
 
 .subscribe-input::placeholder {
+  letter-spacing: 0.04em;
   color: var(--white);
 }
 
@@ -720,6 +721,7 @@ a {
 }
 
 .form-policy-label {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
