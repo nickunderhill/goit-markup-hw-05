@@ -337,8 +337,8 @@ a {
 }
 
 .footer-socials .socials {
-  gap: 16px; 
-  margin-right: 80px;
+  max-width: 208px;
+  gap: 16px;
 }
 
 .footer-socials .socials-icon {
@@ -349,6 +349,12 @@ a {
 .socials-header, .subscribe-header {
   margin-bottom: 16px;
 }
+
+.footer-subscribe {
+  max-width: 453px;
+  margin-left: auto;
+}
+
 
 .subscribe-form {
   display: flex;
@@ -378,6 +384,7 @@ a {
 
 .subscribe-btn {
   display: flex;
+  justify-content: center;
   gap: 16px;
   letter-spacing: 0.04em;
   line-height: 1.5;
@@ -389,7 +396,6 @@ a {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  padding: 16px 32px;
 
   transition-property: background-color;
   transition-duration: 250ms;
@@ -567,11 +573,9 @@ a {
   position: absolute;
   max-width: 408px;
   min-height: 584px;
-  top: 80px;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--dairy);
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
   border-radius: 4px;
@@ -656,7 +660,11 @@ a {
 
 .modal-form-field {
   position: relative;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.modal-form-field-comment {
+  margin-bottom: 16px;
 }
 
 .modal-icon {
@@ -673,6 +681,7 @@ a {
 }
 
 .modal-comment {
+  display: block;
   font-size: 12px;
   line-height: 1.1666;
   color: var(--navy-blue);
@@ -717,10 +726,14 @@ a {
 
 .modal-form-checkbox {
   display: flex;
+  align-items: center;
   margin-bottom: 24px;
 }
 
 .form-policy-label {
+  padding-left: 24px;
+  position: absolute;
+  color: var(--light-slate);
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -740,6 +753,8 @@ a {
 
 .privacy-policy-link {
   display: block;
+  text-decoration: underline;
+  color: var(--iris);
 }
 
 .custom-checkbox {
@@ -758,13 +773,13 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-checkbox-input:checked + .form-policy-label .custom-checkbox {
+.form-checkbox-input:checked + .custom-checkbox {
   background-color: var(--ocean);
   fill: var(--white);
   border: none;
 }
 
-.form-checkbox-input:focus + .form-policy-label .custom-checkbox {
+.form-checkbox-input:focus + .custom-checkbox {
   border: 1px solid var(--iris);
 }
 

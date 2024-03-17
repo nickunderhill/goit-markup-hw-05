@@ -389,7 +389,7 @@
                     <p class="subscribe-header">Subscribe</p>
                     <form class="subscribe-form">
                         <label class="subscribe-label">
-                            <input class="subscribe-input" type="email" placeholder="E-mail" , name="email" />
+                            <input class="subscribe-input" type="email" placeholder="E-mail" name="email" />
                         </label>
                         <button class="subscribe-btn" type="submit">
                             Subscribe
@@ -437,7 +437,7 @@
                         <use href="./images/icons.svg#icon-envelope"></use>
                     </svg>
                 </div>
-                <div class="modal-form-field">
+                <div class="modal-form-field-comment">
                     <label for="comment" class="modal-label">Comment</label>
                     <textarea class="modal-comment" name="comment" id="comment" placeholder="Text input"
                         required=""></textarea>
@@ -445,14 +445,13 @@
                 <div class="modal-form-checkbox">
                     <input type="checkbox" id="policy" name="policy" value="true"
                         class="form-checkbox-input visually-hidden" />
-                    <label for="policy" class="form-policy-label">
-                        <div class="custom-checkbox">
-                            <svg class="checkmark-icon">
-                                <use href="./images/icons.svg#icon-checkmark"></use>
-                            </svg>
-                        </div>
-                        I accept the terms and conditions of the&nbsp<a class="privacy-policy-link" href="#"
-                            target="_blank">Privacy Policy</a>
+                    <div class="custom-checkbox">
+                        <svg class="checkmark-icon">
+                            <use href="./images/icons.svg#icon-checkmark"></use>
+                        </svg>
+                    </div>
+                    <label for="policy" class="form-policy-label">I accept the terms and conditions of the&nbsp;<a
+                            class="privacy-policy-link" href="#" target="_blank">Privacy Policy</a>
                     </label>
                 </div>
                 <button class="modal-btn-send" type="submit">Send</button>
