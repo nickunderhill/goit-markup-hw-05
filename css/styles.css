@@ -361,8 +361,9 @@ a {
   gap: 24px;
 }
 
-
 .subscribe-input {
+  font-size: 12px;
+  line-height: 2; 
   color: var(--white);
   width: 264px;
   height: 40px;
